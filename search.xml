@@ -2,7 +2,24 @@
 <search>
   <entry>
     <title><![CDATA[Hello World]]></title>
-    <url>%2F2018%2F09%2F29%2Fhello-world%2F</url>
+    <url>%2F2018%2F10%2F03%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+      <categories>
+        <category>博客教程</category>
+      </categories>
+      <tags>
+        <tag>next主题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[如何发布博客文章]]></title>
+    <url>%2F2018%2F10%2F03%2F%E5%A6%82%E4%BD%95%E5%8F%91%E5%B8%83%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%2F</url>
+    <content type="text"><![CDATA[本教程教大家如何发布自己的博客文章！ 还没有搭建好博客环境的可以参考这篇文章 搭建个人博客 最近是国庆假期，祝大家国庆快乐！ 环境准备博客生成的文章都是以md结尾的，这种文件推荐使用专业支持Markdown语法的编辑器进行打开编辑，例如Windows平台的MarkdownPad可以支持文章的实时预览，效果出众。下面的截图就是安装好的MarkdownPad 2。 下载编辑工具MarkdownPad官方下载连接 MarkdownPad 找到下面截图的位置，然后下载，进行安装。 配置MarkdownPad破解 邮件地址 Soar360@live.com 授权证书 GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ== 破解成功！ 简体中文设置点击TOOLS–Options-editor-Application Language-中文简体 HTML无法渲染点击预览按钮时，提示html无法渲染问题。 解决方案:下载awesomium 官方地址awesomium，找到下图的位置，点击下载安装即可。 开始发布文章给博客添加图片博客有时候需要添加图片说明，才能让文章通俗易懂。 解决方案： 1.在安装Hexo的目录下的_config.yml里的psot_asset_folder:设置为true 2.在安装Hexo的目录下右键选择 Git Bash，执行以下命令 npm install hexo-asset-image --save 安装成功后，在运行hexo n “博客名”来生成md博客时，会在_post目录下看到一个与博客同名的文件夹。 将想要上传的图片先扔到文件夹下，然后在博客中使用markdown的格式引入图片： ![](xxxx/图片名.jpg) 因为博客名和文件夹名字相同，所以不需要绝对路径，只要xxxx是文件夹的名字就可以了。 创建文章在安装Hexo的目录下右键选择 Git Bash hexo n &quot;如何发布博客文章&quot; 双引号内为文章的标题名，可以根据自己的需求自行改动。 这时就会在博客目录下source_posts中生成相应的 如何发布博客文章.md文件,如果你执行了上面添加图片的命令的话，可以看到同时生成了一个同名的文件夹，如果需要添加图片，直接放在这里面，然后在博客内引用即可。 编辑文章对于刚刚产生的md格式的文件，我们就可以用安装好的MarkdownPad来打开。在编辑文章的同时，可以在浏览器预览当前的编辑内容。 这里放一些MarkdownPad常用语法，供大家参考当然也可以用编辑器自带的工具栏快速编辑文章 标题# 这是一级标题 ## 这是二级标题 ### 这是三级标题 #### 这是四级标题 ##### 这是五级标题 ###### 这是六级标题 字体**这是加粗的文字** *这是倾斜的文字*` ***这是斜体加粗的文字*** ~~这是加删除线的文字~~ 图片语法：![图片alt](图片地址 &quot;图片title&quot;) 图片alt就是显示在图片下面的文字，相当于对图片内容的解释。图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加 超链接语法：[超链接名](超链接地址 &quot;超链接title&quot;) title可加可不加 代码语法： 单行代码：代码之间分别用一个反引号包起来 `代码内容` 代码块 function fun(){ echo &quot;这是一句非常牛逼的代码&quot;; } 语法:在代码块后面回车，然后按一个tab键，即可编写代码块 本地预览编辑完成后就可以进行本地预览 hexo g hexo s hexo g 生成本地html文件，hexo s 开启本地服务，可以在localhost:4000查看当前编写的文章。 发布hexo d 将本文推送到github上，然后就可以访问了。]]></content>
+      <categories>
+        <category>博客教程</category>
+      </categories>
+      <tags>
+        <tag>next主题</tag>
+      </tags>
   </entry>
 </search>
