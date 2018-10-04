@@ -109,7 +109,7 @@
 <meta property="og:image" content="https://stormlong.github.io/2018/10/04/定制NexT主题/forkgithub.png">
 <meta property="og:image" content="https://stormlong.github.io/2018/10/04/定制NexT主题/percent.png">
 <meta property="og:image" content="https://stormlong.github.io/2018/10/04/定制NexT主题/底部标签样式.png">
-<meta property="og:updated_time" content="2018-10-04T11:50:12.300Z">
+<meta property="og:updated_time" content="2018-10-04T12:02:02.116Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="定制NexT主题">
 <meta name="twitter:description" content="简介:Hexo 是高效的静态站点生成框架，她基于 Node.js。在前面安装好这个框架后，我们可以选择多套主题来展示我们的博客样式风格。这里是这个框架包含的主题样式。本案例采用nexT主题风格，可以参考官方使用文档。当你看到这篇博客的风格时，这就是所谓nexT主题了！ 在 Hexo 中有两份主要的配置文件，其名称都是 _config.yml。 其中，一份位于站点根目录下，主要包含 Hexo 本身的">
@@ -123,7 +123,7 @@
     root: '/',
     scheme: 'Gemini',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -894,7 +894,7 @@ transform: rotateZ(-360deg);
     totalcount: true
     separated_meta: true
 </code></pre><h2 id="文章结束标志"><a href="#文章结束标志" class="headerlink" title="文章结束标志"></a>文章结束标志</h2><h3 id="新建passage-end-tag-swig文件"><a href="#新建passage-end-tag-swig文件" class="headerlink" title="新建passage-end-tag.swig文件"></a>新建passage-end-tag.swig文件</h3><p>在路径\themes\next\layout_macro中新建passage-end-tag.swig文件,并添加以下内容：</p>
-<p><a href="/end.txt">点击这里获取代码</a></p>
+<p><a href="end.txt">点击这里获取代码</a></p>
 <p>其中 font-size:14px，数字越大，代表页面显示结束标志的字体就越大。</p>
 <h3 id="修改-post-swig-文件"><a href="#修改-post-swig-文件" class="headerlink" title="修改 post.swig 文件"></a>修改 post.swig 文件</h3><p>在 \themes\next\layout_macro\post.swig中， post-body之后， post-footer之前添加如下代码（post-footer之前两个DIV）</p>
 <pre><code>&lt;div&gt; 
@@ -1298,8 +1298,6 @@ permalink: :year/:month/:day/:title/
     
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
-        
-          <span id="scrollpercent"><span>0</span>%</span>
         
       </div>
     
