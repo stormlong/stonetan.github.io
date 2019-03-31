@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="next主题," />
+  <meta name="keywords" content="数据结构," />
 
 
 
@@ -86,13 +86,13 @@
 
 
 
-<meta name="description" content="我们平常都用到微信，QQ，微博等社交软件，但是你有没有考虑过这些社交软件的好友关系是怎么存储的？这就是我们今天要介绍的数据结构–图。 如何理解’图’图（Graph）是一种更加复杂的非线性表构。图中的元素我们就叫作 顶点（vertex） 。图中的一个顶点可以与任意其他顶点建立连接关系。我们把这种建立的关系叫作边（edge）。  现实生活中微信好友之间的关系就用图这种数据结构来存储的。每一个用户就是一">
-<meta name="keywords" content="next主题">
+<meta name="description" content="我们平常都用到微信，QQ，微博等社交软件，但是你有没有考虑过这些社交软件的好友关系是怎么存储的？这就是我们今天要介绍的数据结构–图。 如何理解 图图（Graph）是一种更加复杂的非线性表构。图中的元素我们就叫作 顶点（vertex） 。图中的一个顶点可以与任意其他顶点建立连接关系。我们把这种建立的关系叫作边（edge）。  现实生活中微信好友之间的关系就用图这种数据结构来存储的。每一个用户就是一个">
+<meta name="keywords" content="数据结构">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数据结构-图">
 <meta property="og:url" content="https://stormlong.github.io/2019/03/30/数据结构-图/index.html">
 <meta property="og:site_name" content="stormlong&#39; blog">
-<meta property="og:description" content="我们平常都用到微信，QQ，微博等社交软件，但是你有没有考虑过这些社交软件的好友关系是怎么存储的？这就是我们今天要介绍的数据结构–图。 如何理解’图’图（Graph）是一种更加复杂的非线性表构。图中的元素我们就叫作 顶点（vertex） 。图中的一个顶点可以与任意其他顶点建立连接关系。我们把这种建立的关系叫作边（edge）。  现实生活中微信好友之间的关系就用图这种数据结构来存储的。每一个用户就是一">
+<meta property="og:description" content="我们平常都用到微信，QQ，微博等社交软件，但是你有没有考虑过这些社交软件的好友关系是怎么存储的？这就是我们今天要介绍的数据结构–图。 如何理解 图图（Graph）是一种更加复杂的非线性表构。图中的元素我们就叫作 顶点（vertex） 。图中的一个顶点可以与任意其他顶点建立连接关系。我们把这种建立的关系叫作边（edge）。  现实生活中微信好友之间的关系就用图这种数据结构来存储的。每一个用户就是一个">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://stormlong.github.io/2019/03/30/数据结构-图/图.jpg">
 <meta property="og:image" content="https://stormlong.github.io/2019/03/30/数据结构-图/方向图.jpg">
@@ -104,10 +104,10 @@
 <meta property="og:image" content="https://stormlong.github.io/2019/03/30/数据结构-图/十字链表示意图.jpg">
 <meta property="og:image" content="https://stormlong.github.io/2019/03/30/数据结构-图/边关系.jpg">
 <meta property="og:image" content="https://stormlong.github.io/2019/03/30/数据结构-图/十字链表.jpg">
-<meta property="og:updated_time" content="2019-03-31T04:38:43.756Z">
+<meta property="og:updated_time" content="2019-03-31T04:50:51.384Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数据结构-图">
-<meta name="twitter:description" content="我们平常都用到微信，QQ，微博等社交软件，但是你有没有考虑过这些社交软件的好友关系是怎么存储的？这就是我们今天要介绍的数据结构–图。 如何理解’图’图（Graph）是一种更加复杂的非线性表构。图中的元素我们就叫作 顶点（vertex） 。图中的一个顶点可以与任意其他顶点建立连接关系。我们把这种建立的关系叫作边（edge）。  现实生活中微信好友之间的关系就用图这种数据结构来存储的。每一个用户就是一">
+<meta name="twitter:description" content="我们平常都用到微信，QQ，微博等社交软件，但是你有没有考虑过这些社交软件的好友关系是怎么存储的？这就是我们今天要介绍的数据结构–图。 如何理解 图图（Graph）是一种更加复杂的非线性表构。图中的元素我们就叫作 顶点（vertex） 。图中的一个顶点可以与任意其他顶点建立连接关系。我们把这种建立的关系叫作边（edge）。  现实生活中微信好友之间的关系就用图这种数据结构来存储的。每一个用户就是一个">
 <meta name="twitter:image" content="https://stormlong.github.io/2019/03/30/数据结构-图/图.jpg">
 
 
@@ -487,13 +487,13 @@
 
       
         <p>我们平常都用到微信，QQ，微博等社交软件，但是你有没有考虑过这些社交软件的好友关系是怎么存储的？这就是我们今天要介绍的数据结构–图。</p>
-<h2 id="如何理解’图’"><a href="#如何理解’图’" class="headerlink" title="如何理解’图’"></a>如何理解’图’</h2><p><strong>图（Graph）</strong>是一种更加复杂的非线性表构。<br>图中的元素我们就叫作 <strong>顶点（vertex）</strong> 。图中的一个顶点可以与任意其他顶点建立连接关系。我们把这种建立的关系叫作<strong>边（edge）</strong>。</p>
+<h2 id="如何理解-图"><a href="#如何理解-图" class="headerlink" title="如何理解 图"></a>如何理解 图</h2><p><strong>图（Graph）</strong>是一种更加复杂的非线性表构。<br>图中的元素我们就叫作 <strong>顶点（vertex）</strong> 。图中的一个顶点可以与任意其他顶点建立连接关系。我们把这种建立的关系叫作<strong>边（edge）</strong>。</p>
 <p><img src="/2019/03/30/数据结构-图/图.jpg" alt=""></p>
 <p>现实生活中微信好友之间的关系就用图这种数据结构来存储的。每一个用户就是一个顶点，如果两个用户之间互相加好友，就在这两个顶点之间建立一条边。每个用户有多少个好友，就对应到图中就是顶点的<strong>度（degree）</strong>。就是跟顶点相连接的边的条数。</p>
 <p>微博的社交关系跟微信有些不一样，微博允许单方向关注。也就是 A 关注了 B , B 可以不用关注 A ,这时我们可以用带 <em>“方向”</em> 的图来表示。</p>
 <p><img src="/2019/03/30/数据结构-图/方向图.jpg" alt=""></p>
 <p>如果用户 A 关注了用户 B，我们就在图中画一条从 A 到 B 的带箭头的边，来表示边的方向。如果用户 A 和用户 B 互相关注了，再画一条从 B 指向 A 的边。我们把这种边有方向的图叫作“有向图”。我们把边没有方向的图就叫作”无向图”。</p>
-<p>在有向图，可以把 “度”，分为 <strong>入度</strong> 和 <strong>出度</strong></p>
+<p>在有向图，可以把 “度”，分为 <strong>入度</strong> 和 <strong>出度</strong> 。</p>
 <p>顶点的入度，表示有多少条边指向这个顶点；顶点的出度，表示有多少条边是以这个顶点为起点指向其他顶点。对应到微博的例子，入度就表示有多少粉丝，出度就表示关注了多少人。</p>
 <p>QQ的社交关系就比较复杂一点。QQ有一个亲密度这样的功能，如果两人之间经常来往，那么亲密度就会比较高，如果不经常来往，亲密度就比较低，这就是 <strong>带权图</strong> 。</p>
 <p><img src="/2019/03/30/数据结构-图/带权图.jpg" alt=""></p>
@@ -612,7 +612,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/next主题/" rel="tag"><i class="fa fa-tag"></i> next主题</a>
+            <a href="/tags/数据结构/" rel="tag"><i class="fa fa-tag"></i> 数据结构</a>
           
         </div>
       
@@ -739,7 +739,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -836,7 +836,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#如何理解’图’"><span class="nav-number">1.</span> <span class="nav-text">如何理解’图’</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#邻接矩阵存储方法"><span class="nav-number">2.</span> <span class="nav-text">邻接矩阵存储方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#邻接表存储方法"><span class="nav-number">3.</span> <span class="nav-text">邻接表存储方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#逆邻接表"><span class="nav-number">4.</span> <span class="nav-text">逆邻接表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#十字链表"><span class="nav-number">5.</span> <span class="nav-text">十字链表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">6.</span> <span class="nav-text">总结</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#如何理解-图"><span class="nav-number">1.</span> <span class="nav-text">如何理解 图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#邻接矩阵存储方法"><span class="nav-number">2.</span> <span class="nav-text">邻接矩阵存储方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#邻接表存储方法"><span class="nav-number">3.</span> <span class="nav-text">邻接表存储方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#逆邻接表"><span class="nav-number">4.</span> <span class="nav-text">逆邻接表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#十字链表"><span class="nav-number">5.</span> <span class="nav-text">十字链表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">6.</span> <span class="nav-text">总结</span></a></li></ol></div>
             
 
           </div>
